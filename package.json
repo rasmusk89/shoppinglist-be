@@ -1,0 +1,37 @@
+{
+  "name": "shoppinglist-be",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "start:tsc": "tsc --watch",
+    "start:nodemon": "nodemon dist/index.js",
+    "start": "npm-run-all --parallel start:*",
+    "format": "prettier --write . && eslint . --fix",
+    "lint": "eslint .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@koa/router": "^12.0.0",
+    "knex": "^2.4.2",
+    "koa": "^2.14.1",
+    "mysql2": "^3.1.2",
+    "node": "^19.6.0",
+    "typescript": "^4.9.5"
+  },
+  "devDependencies": {
+    "@types/koa": "^2.13.5",
+    "@types/koa__router": "^12.0.0",
+    "@typescript-eslint/eslint-plugin": "^5.51.0",
+    "@typescript-eslint/parser": "^5.51.0",
+    "eslint": "^8.34.0",
+    "nodemon": "^2.0.20",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^2.8.4"
+  }
+}
